@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Header = styled.section`
+    position: -webkit-sticky;
     position: sticky;
     top: 100px;
     height: 200px;
     z-index: 5;
-    /* pointer-events: none; */
+    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +39,6 @@ export const Header = styled.section`
         text-align: center;
     }
 `;
-
-const section = styled.section``;
 
 export const Body = styled.section`
     background-color: white;
@@ -88,6 +87,8 @@ export const Portrait = styled.div`
 `;
 
 export const Current = styled(Body)`
+    z-index: 21;
+
     p {
         &:nth-of-type(even) {
             margin: 16px 0;
@@ -110,6 +111,7 @@ export const Current = styled(Body)`
 `;
 
 export const Skills = styled(Body)`
+    z-index: 22;
     h2 {
         margin: 40px 0 10px 0;
         font-size: 40px;

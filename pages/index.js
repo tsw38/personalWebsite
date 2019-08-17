@@ -1,11 +1,11 @@
 import {
-    Homepage,
+    Home,
     Wrapper,
     Icons,
     Icon
 } from 'styles/homepage';
 
-export default (props) => {
+const Homepage = (props) => {
     const icons = [
         {
             title: "Linkedin",
@@ -25,7 +25,7 @@ export default (props) => {
     ]
 
     return (
-        <Homepage>
+        <Home>
             <Wrapper>
                 <h1>Hey, I'm Tyler Williams.</h1>
                 <h2>I'm a full-stack developer working in Chicago, IL.</h2>
@@ -46,6 +46,15 @@ export default (props) => {
                     ))}
                 </Icons>
             </Wrapper>
-        </Homepage>
+        </Home>
     );
 }
+
+
+Homepage.getInitialProps = async ({ req }) => {
+    return {
+        title: 'Home'
+    }
+}
+
+export default Homepage;

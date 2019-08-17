@@ -4,7 +4,7 @@ import {
     Wrapper
 } from 'styles/contact';
 
-export default () => {
+const ContactPage = () => {
     return (
         <Contact>
             <Wrapper>
@@ -16,3 +16,11 @@ export default () => {
         </Contact>
     );
 }
+
+ContactPage.getInitialProps = async ({ req }) => {
+    return {
+        title: 'Contact'
+    }
+}
+
+export default ContactPage;

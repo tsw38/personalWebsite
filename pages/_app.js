@@ -1,6 +1,6 @@
 import React from 'react'
 import App from 'next/app'
-import Head from 'next/head'
+import Head from 'common/Head'
 
 import Layout from 'components/Layout';
 
@@ -13,9 +13,7 @@ export default class MyApp extends App {
 
         return (
             <React.Fragment>
-                <Head>
-                    <title>My new cool app</title>
-                </Head>
+                <Head {...pageProps} />
                 <Layout
                     className={className && `Page--${className}`}>
                     <Component

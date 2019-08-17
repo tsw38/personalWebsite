@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Homepage = styled.div`
+export const Home = styled.div`
     position: absolute;
     z-index: 0;
     top: 0;

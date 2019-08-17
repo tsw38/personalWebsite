@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import {
     Header,
     Blurb,
@@ -13,7 +15,7 @@ import {
     SkillListItem
 } from 'styles/about';
 
-export default () => {
+const AboutPage = () => {
     const yearsExperience = new Date().getFullYear() - 2015;
 
     const text = {
@@ -155,3 +157,11 @@ export default () => {
         </React.Fragment>
     );
 }
+
+AboutPage.getInitialProps = async ({ req }) => {
+    return {
+        title: 'About'
+    }
+}
+
+export default AboutPage;

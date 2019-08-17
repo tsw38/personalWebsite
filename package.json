@@ -2,9 +2,9 @@
   "name": "ssr-caching",
   "version": "1.0.0",
   "scripts": {
-    "dev": "PORT=4260 node server.js",
-    "build": "PORT=4260 next build",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "PORT=4250 node server.js",
+    "build": "PORT=4250 next build",
+    "start": "PORT=4250 NODE_ENV=production node server.js"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
