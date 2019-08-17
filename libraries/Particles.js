@@ -215,7 +215,6 @@ const Particles = {
         Particles._canvas().width = Particles.CANVAS_WIDTH();
     },
     init: function() {
-        console.warn('this is the init');
         Particles.createScene(Particles.isMobile() ? 1500 : 7000);
 
         Particles._canvas().height = Particles.CANVAS_HEIGHT();
